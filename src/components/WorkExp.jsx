@@ -23,8 +23,8 @@ WorkExp.defaultProps = {
     companyName : "Evil inc",
     role: "CEO",
     description: <ul>
-        <li>"did X by Y resulting in Z"</li>
-        <li>"did X by Y resulting in Z"</li>
-        <li>"did X by Y resulting in Z"</li>
+        <li>did X by Y resulting in Z</li>
+        <li>did X by Y resulting in Z</li>
+        <li>did X by Y resulting in Z</li>
     </ul>,
 }
