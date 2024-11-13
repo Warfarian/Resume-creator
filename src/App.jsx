@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
 import './styles/App.css'
-import GenInfo from './components/GenInfo.jsx'
-import WorkExp from './components/WorkExp.jsx'
-import Education from './components/Education.jsx'
 
+// import GenInfo from './components/GenInfo.jsx'
+// // import WorkExp from './components/WorkExp.jsx'
+// import Education from './components/Education.jsx'
+import InputForm from './InputForm.jsx'
 
 function App() {
-
   return (
-    <div className='resume'>
-      <GenInfo />
-      <Education />
-      <WorkExp />
+    <div className='container'>
+      <div className='inputForm'>
+        <InputForm />
+      </div>
+
+      <div className='resume'>
+
+      </div>
     </div>
   )
 }
