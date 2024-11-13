@@ -1,39 +1,138 @@
-.resume{
-    background-color: hsla(0, 100%, 98%, 0.674);
-    width: 100%;
-    margin: auto;
-    height: auto;
+/* General Resume Container */
+.resume {
+    background-color: hsla(0, 0%, 95%, 0.7); /* Light background with transparency */
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
-
-.genInfo{
-    margin: auto;
+/* Section Headers (General Info, Education, Work Experience) */
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
 }
 
-button{
-    margin: 0px 2px;
-    padding: 2px;
-}
-
-.allForms{
+/* Styling for Form Sections */
+.allForms {
     padding: 25px;
-    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 25px;
 }
 
-.genInfoForm{
+/* Form Fields Styling */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"],
+
+button {
+    width: 15em;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+/* Form Fields Container */
+.genInfoForm,
+.educationForm,
+.workExpForm {
     display: flex;
-    margin: auto;
-    gap: 10px;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;  
+    gap: 15px; 
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
 }
 
-.educationForm{
-    display: flex;
-    margin: auto;
-    gap: 10px;
-    padding: 20px;
+/* Centering input fields inside form sections */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.workExpForm{
-    
+/* Button Styling */
+input[type="submit"],
+button {
+    width: 1px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;  
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Button Hover Effect */
+input[type="submit"]:hover,
+button:hover {
+    background-color: #3c3d3c;
+}
+
+/* For when the user is in Edit Mode: Making the form fields larger for focus */
+.genInfoForm input,
+.educationForm input,
+.workExpForm input {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Optional: Add some spacing between different sections */
+.genInfo, .workExp, .education {
+    margin-bottom: 30px;
+}
+
+/* For better readability of each section */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
 }
